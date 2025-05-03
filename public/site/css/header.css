@@ -1,0 +1,227 @@
+.top-bar {
+  background-color: var(--color-Primary1);
+  padding: 15px 0;
+  color: var(--color-white);
+}
+.top-bar .main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-bar a {
+  color: var(--color-white);
+}
+.content-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.sco-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.content-header a:hover {
+  color: var(--color-Primary2);
+  text-shadow: 0 0 10px var(--color-Primary2);
+}
+.sco-media ul li a {
+  background-color: #1f506496;
+  width: 45px;
+  display: flex;
+  border-radius: 50%;
+  position: relative;
+  border: 2px solid transparent;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+  height: 45px;
+  color: var(--color-white);
+}
+.sco-media ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--color-Primary2);
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+.sco-media ul li a:hover:before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--color-Primary2);
+}
+
+.sco-media ul li a:hover {
+  color: var(--color-Primary2);
+  box-shadow: 0 0 10px var(--color-Primary2);
+  text-shadow: 0 0 10px var(--color-Primary2);
+  /* border: 2px solid var(--color-Primary2); */
+}
+.nav-bar {
+  background-color: var(--color-white);
+  padding: 15px 0;
+}
+
+.nav-bar .main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.element ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.element ul li a {
+  display: inline-block;
+  font-size: 18px;
+  position: relative;
+  transition: all 0.3s linear;
+}
+.element ul li a:hover {
+  color: var(--color-Primary2);
+  text-shadow: 0 4px 5px var(--color-Primary2);
+}
+.ctm-btn {
+  display: inline-block;
+  min-width: 180px;
+  height: 50px;
+  position: relative;
+  background-color: var(--color-Primary2);
+  text-align: center;
+  color: var(--color-white);
+  padding: 12px 25px;
+  z-index: 2;
+  animation: btn1 1.5s linear infinite;
+  border: none;
+  font-family: "font_medium";
+  border-radius: 35px;
+
+  transition: all 0.3s linear;
+}
+.ctm-btn:hover {
+  background-color: var(--color-Primary1);
+  color: var(--color-white);
+  animation: none !important;
+}
+.ctm-btn:hover:after,
+.ctm-btn:hover:before {
+  background-color: var(--color-Primary1);
+}
+.ctm-btn::after {
+  content: "";
+  background-color: var(--color-Primary2);
+  opacity: 0.6;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transition: all 0.3s linear;
+
+  transform: translate(-50%, -50%);
+  width: calc(100% + 10px);
+  z-index: -1;
+  height: calc(100% + 10px);
+  border-radius: 35px;
+  animation: btn2 1.5s linear infinite;
+  animation-delay: 0.2s;
+}
+
+.ctm-btn::before {
+  content: "";
+  background-color: var(--color-Primary2);
+  position: absolute;
+  transition: all 0.3s linear;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% + 20px);
+  z-index: -1;
+  height: calc(100% + 20px);
+  border-radius: 35px;
+  animation: btn3 1.5s linear infinite;
+  animation-delay: 0.4s;
+}
+@keyframes btn3 {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+@keyframes btn2 {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+@keyframes btn1 {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.title-page {
+  display: flex;
+  min-height: 300px;
+  align-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  z-index: 1;
+}
+.title-page h1 {
+  text-align: center;
+  color: var(--color-white);
+  width: 100%;
+  font-size: 30px;
+}
+.title-page::after {
+  content: "";
+  background-color: #02090c;
+  opacity: 0.67;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  right: 0;
+}
+.element ul li a.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-Primary1);
+}

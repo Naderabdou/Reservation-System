@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    direction: ltr;
+}
+
+/* nader */
+.order-item-details .item-price {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.order-item-details .item-date {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.details-header .order-number {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.details-header .order-price {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.product-price .old-price {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* nader */
+
+.department_classifications_slider .card {
+    direction: ltr;
+}
+
+.department_classifications_slider .card .icon .fa-arrow-left::before {
+    display: inline-block;
+}
+
+.department_classifications_slider .card .icon .fa-arrow-left::before,
+.sub-header-page,
+.sub-header-page .main-container,
+.sub-header-liniks img {
+    transform: scale(-1);
+}
+
+.product-index .txt .icon {
+    margin-right: unset;
+    margin-left: auto;
+}
+
+.offer-banner,
+.our-customers .item {
+    direction: rtl;
+}
+.order-status-icon::before {
+    font-size: 13px;
+}
+
+.top-title,
+.department_classifications_head p,
+.about-header p,
+.our-customers .customers-header p,
+.search-links a p,
+.product-index .txt .desc,
+.product-index .txt .price,
+.blog-header p,
+.sub-header-txt,
+.sub-header-liniks a,
+.sub-header-liniks p,
+.fav-content-head p,
+.fav-items .img-container p,
+.fav-items .price,
+.details-content h2,
+.product-price .current-price,
+.product-details-tab #pills-home,
+.customer-item p,
+.blog-card-txt-details,
+.blog-card p.dt,
+.item-ctm .txt p,
+.order-summary .txt p,
+.total-txt p,
+.order-summary a,
+.order-summary .txt span,
+.total-txt span,
+.check-out-cards-txt,
+.order-summary-p,
+.order-summary .buy-done,
+.payments-way-p,
+.payments-way label p,
+.check-out-form-address .frm-txt-p,
+.order-summary .summary-form button,
+.cards-container .crd .txt .text,
+.cards-container .crd .txt .price,
+.cards-container .crd .txt .count,
+.my-account-sidebar-item-icon .user-email,
+.my-account-content h4,
+.my-account-sidebar-item-links a p,
+.accordion-body,
+.comment-form button,
+.logoout-content h4,
+.not-have-account a,
+.loginform form .frm-head,
+.order-summary form button,
+.header-contact a,
+.detailse .itn span,
+.detailse .itn p,
+.my-orders-header .nav-pills .nav-link,
+.my-orders-header h4,
+.current-orders-header a,
+.contact-form form p,
+.txt-head-question,
+.contact-form form button {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.footer-contact p,
+.order-summary .txt,
+.cart-tem-price-p,
+.logout-action a,
+.current-orders-header h4 {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.news-banner-header form input,
+.footer-contact form input {
+    border-radius: 12px 0px 0px 12px;
+    border-right: none;
+    border-left: 1px solid white;
+}
+
+.news-banner-header form button,
+.footer-contact form button {
+    border-radius: 0 12px 12px 0px;
+}
+
+.search-input button,
+.footer-top-img,
+.order-summary form button,
+.order-summary .summary-form button,
+.input-frm .icon {
+    left: unset;
+    right: 10px;
+}
+
+.summary-form-img {
+    right: unset;
+    left: 10px;
+}
+.my-account-content form .form-group .input-group img {
+    left: auto;
+    right: 20px;
+}
+
+.order-summary form input,
+.order-summary .summary-form input {
+    padding-right: 0;
+    padding-left: 40px;
+}
+
+.img-dogs-container .img,
+.login-info {
+    right: 0;
+    left: auto;
+}
+
+.sub-header-liniks {
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.img-dogs-container .img {
+    width: 190px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -150px;
+    border: 3px solid #fff;
+    right: 0;
+    left: auto;
+}
+
+.img-dogs-container .img:nth-child(4) {
+    left: auto;
+    right: 210px;
+}
+
+.img-dogs-container .img:nth-child(5) {
+    right: 210px;
+    left: auto;
+}
+
+.dog-haddi {
+    right: 154px;
+    left: auto;
+    transform: scaleX(-1);
+}
+
+.details-counter .add-to-cart svg {
+    transform: scaleX(-1);
+}
+
+.details-counter .add-to-cart:hover svg {
+    animation: cartGo 1.5s ease-in-out infinite 0.1s;
+}
+@keyframes cartGo {
+    0% {
+        transform: translateX(0px) scaleX(-1);
+    }
+    50% {
+        transform: translateX(8px) rotate(40deg) scaleX(-1);
+    }
+    100% {
+        transform: translateX(-55px) rotate(40deg) scaleX(-1);
+    }
+}
+
+.footer-links ul {
+    padding-left: 0;
+}
+
+.select-container .icon {
+    left: auto;
+    right: 10px;
+}
+
+.txt-head-question + p {
+    margin-right: 200px;
+}
+
+.cnt-inp,
+.filter-txt-from-to {
+    flex-direction: row-reverse;
+}
+@media (max-width: 1024px) {
+    .img-dogs-container .img {
+        width: 140px;
+        height: 101px;
+    }
+
+    .img-dogs-container .img {
+        top: -100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-dogs-container .img:nth-child(4) {
+        top: -35px;
+        left: 40px;
+    }
+    .img-dogs-container .img:nth-child(5) {
+        top: 90px;
+        left: 40px;
+    }
+    .txt-head-question + p {
+        margin-right: 0px;
+    }
+    .about-ratting .ratting-item p {
+        font-weight: 400;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 620px) {
+    .img-dogs-container .img {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+    }
+    .img-dogs-container .img:nth-child(4) {
+        top: auto;
+        left: auto;
+        right: auto;
+    }
+    .img-dogs-container .img:nth-child(5) {
+        left: auto;
+        right: auto;
+        text-align: start;
+        top: auto;
+    }
+    .img-dogs-container .img:nth-child(3) {
+        top: auto;
+    }
+    .img-dogs-container {
+        width: 100%;
+        position: relative;
+        min-height: 320px;
+        display: flex;
+        min-height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .about-ratting {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-top-img {
+        right: auto;
+        left: 50%;
+    }
+}

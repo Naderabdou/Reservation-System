@@ -1,0 +1,952 @@
+@media (min-width: 1440px) {
+  footer {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+    
+}
+
+@media   (max-width: 1200px) {
+    
+    .my-account-sidebar-item-icon .user-email{
+        font-size: 18px;
+    }
+
+    
+
+}
+@media (max-width: 1024px) {
+  .news-banner-img {
+    height: 80%;
+    bottom: -15%;
+  }
+
+  .news-banner-header h1 {
+    font-size: 30px;
+  }
+  .news-banner-header form {
+    width: 450px;
+  }
+  .banner-contact-form{
+    width: 100%;
+  }
+
+    .customer-bg {
+        position: absolute;
+        top: -50px;
+        right: 0px;
+        width: 240px;
+        height: 165px;
+    }
+    
+    /* logout */
+    .logout-container{
+        width: 600px;
+    }
+
+}
+@media (max-width: 992px) {
+  .about-us .row {
+    row-gap: 70px;
+  }
+
+  .about-img .img-container {
+    width: 480px;
+    height: 410px;
+  }
+
+  .news-banner-header form {
+    width: 380px;
+  }
+
+  .customers-slider {
+    padding: 0;
+  }
+
+  .news-banner-header h1 {
+    font-size: 24px;
+  }
+
+  .news-banner-img {
+    height: 80%;
+    bottom: -15%;
+  }
+
+  .offer-banner .offer-price {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .offer-price img {
+    right: 0;
+  }
+
+  .owl-customers .owl-nav{
+    display: none !important;
+  }
+  footer {
+    background-size: cover;
+  }
+
+  .banner-sub-container {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .banner-sub-container .offer-item {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .customer-bg {
+    top: -75px;
+    width: 210px;
+    height: 145px;
+  }
+
+  .our-customers .customers-header p {
+    text-align: center;
+  }
+
+  .details-imgaes {
+    height: 500px;
+    margin-bottom: 40px;
+  }
+
+  .details-content h2,
+  .product-sug-container h4 {
+    font-size: 30px;
+  }
+
+    .product-price h4{
+        font-size: 22px;
+    }
+
+    
+    /* profile */
+    .my-account{
+        margin: 70px 0px ;
+    }
+
+
+    /* logout */
+    .logout-container{
+        width: 570px;
+    }
+
+    .discounts-cards .card{
+      height: 300px;
+    }
+
+    .features-banner{
+      width: 115px;
+    }
+
+
+}
+@media (max-width: 768px) {
+  .about-img .img-container {
+    width: 460px;
+    height: 395px;
+  }
+
+  .about-us .lable1,
+  .about-us .lable2 {
+    height: 50px;
+  }
+  .about-us .lable1 p,
+  .about-us .lable2 p {
+    font-size: 15px;
+  }
+
+  .partner-item {
+    width: 140px;
+    height: 140px;
+  }
+
+  .news-banner-header form {
+    width: 350px;
+  }
+
+  .customer-info p,
+  .details-counter .add-to-cart-btn {
+    font-size: 16px;
+  }
+
+  .news-banner-header h1 {
+    font-size: 22px;
+  }
+
+  .news-banner-img {
+    height: 70%;
+    bottom: -15%;
+    right: 5px;
+  }
+
+  .customer-bg {
+    width: 170px;
+    height: 125px;
+  }
+
+  .details-imgaes {
+    height: 420px;
+  }
+
+  .details-content h2,
+  .product-sug-container h4 {
+    font-size: 28px;
+  }
+
+  .product-price h4 {
+    font-size: 20px;
+  }
+
+  .details-content .product-rate i,
+  .details-content .product-rate .rate-count p,
+  .details-content-description p,
+  .details-counter .add-to-cart,
+  .product-details-tab .nav-pills .nav-link,
+  .product-details-tab #pills-home,
+  .product-review .user-details .user-comment {
+    font-size: 16px;
+  }
+
+  .product-details-tab #pills-home,
+  .product-review .user-details .user-name {
+    font-size: 18px;
+  }
+
+  .comment-form input,
+  .comment-form button,
+  .product-details-tab .nav-pills .nav-link {
+    height: 65px;
+    font-size: 16px;
+  }
+
+  .comment-form button {
+    width: 150px;
+  }
+
+    /* profile home*/
+   
+    .my-account-content h4{
+        font-size: 28px;
+    }
+
+    .my-account-content form .form-group label{
+        font-size: 18px;
+    }
+    .my-account-content form .form-group button{
+        height: 64px;
+    }
+    /* profile orders */
+    .my-orders-header h4,
+    .current-orders-header h4,
+    .orders-section-header,
+    .details-header .order-number h4,
+    .details-header .order-price h4,
+    .addresses-header h4,
+    .edit-addresses-header h4{
+        font-size: 20px;
+    }
+    .my-orders-header .nav-pills .nav-link{
+        font-size: 18px;
+        height: 40px;
+    }
+    .info-item h5,
+    .address-details-item h5,
+    .edit-addresses-content .group-form label{
+        font-size: 18px;
+    }
+    .pay-description p, .info-item p{
+        font-size: 14px;
+    }
+
+    .current-orders-header a,
+    .addresses-header a{
+        font-size: 14px;
+        height: 40px;
+    }
+    .order-item-details .item-name,
+    .order-item-details .item-price,
+    .order-item-details .item-date{
+        font-size: 16px;
+    }
+
+    .order-item-img {
+        width: 100px;
+        height: 85px;
+    }
+
+    .address-details-item{
+        padding: 10px;
+        gap:15px;
+    }
+
+    .action-button .form-switch .form-check-input{
+        width: 45px;
+        height: 23px;
+    }
+
+    .edit-addresses-content{
+        padding: 10px;
+    }
+
+    .edit-addresses-content button{
+        height: 55px;
+    }
+    /* logout */
+    .logout-container{
+        width: 70%;
+    }
+    .logoout-content h4{
+        font-size: 20px;
+    }
+    .logoout-content p{
+        font-size: 16px;
+    }
+    .logout-action a{
+        font-size: 16px;
+        width: 150px;
+    }
+
+    .logoout-content{
+        gap: 20px;
+    }
+
+    .logout-container .logout-img{
+        width: 140px;
+        height: 140px;
+    }
+    .logout-container .logout-img img{
+        width: 50%;
+    }
+    
+      .footer-bottom-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .features-banner{
+    width: 115px;
+  }
+
+  .discounts-cards .card{
+    height: 270px;
+  }
+  .shopping-now {
+    bottom: 20px;
+      left: 20px;
+  }
+
+}
+@media (max-width: 576px) {
+  .about-img .img-container {
+    width: 420px;
+    height: 350px;
+  }
+  .footer-bottom-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .news-banner-header form {
+    width: 320px;
+    height: 50px;
+  }
+
+  .customer-info p,
+  .details-counter .add-to-cart-btn {
+    font-size: 14px;
+  }
+  .details-counter .add-to-cart svg{
+    width: 26px;
+    height: 26px;
+  }
+
+  .news-banner-header h1 {
+    font-size: 20px;
+  }
+
+  .news-banner-img {
+    height: 50%;
+    bottom: -15%;
+  }
+
+  .our-customers .customers-header p {
+    font-size: 16px;
+  }
+
+  .customer-bg {
+    top: -65px;
+    width: 140px;
+    height: 105px;
+  }
+
+  .details-imgaes {
+    height: 380px;
+  }
+
+  .slider-for img,
+  .slider-nav img {
+    height: 90%;
+  }
+
+  .details-content h2,
+  .product-sug-container h4 {
+    font-size: 24px;
+  }
+
+    .product-review .user-details .rate i{
+        font-size: 14px;
+    }
+
+    /* profile home */
+    .my-account-sidebar-item-icon .user-email,
+    .my-account-sidebar-item-icon .welcome,
+    .my-account-sidebar-item-links a p,
+    .my-account-content form .form-group label {
+        font-size: 16px;
+    } 
+    .my-account-content h4,
+    .footer-links h4, .footer-contact h4 {
+      
+        font-size: 20px;
+    }
+    
+    .my-account-content form .form-group button{
+        height: 50px;
+    }
+
+    .info-item h5,
+    .address-details-item h5,
+    .edit-addresses-content .group-form label,
+    footer p{
+        font-size: 16px;
+    }
+
+    /* profile orders */
+    .my-orders-header h4,
+    .current-orders-header h4,
+    .orders-section-header,
+    .details-header .order-number h4 ,
+    .details-header .order-price h4,
+    .addresses-header h4,
+    .edit-addresses-header h4{
+        font-size: 18px;
+    }
+    .my-orders-header .nav-pills .nav-link{
+        font-size: 16px;
+        height: 35px;
+    }
+
+    .current-orders-header a,
+    .addresses-header a{
+        font-size: 13px;
+        height: 40px;
+    }
+    .order-item-details .item-name,
+    .order-item-details .item-price,
+    .order-item-details .item-date{
+        font-size: 14px;
+    }
+
+    .order-item-img {
+        width: 90px;
+        height: 65px;
+    }
+    .order-item-img img{
+        width: 70%;
+    }
+    .current-orders-body{
+        padding: 10px;
+    }
+    .current-orders-body .order-item{
+        gap: 10px;
+    }
+
+    .order-status-icon .init-group {
+        width: 22px;
+        height: 22px;
+    }
+    .order-status-icon .init-group img{
+        width:100%;
+    }
+    .order-status-icon{
+        width: 44px;
+        height: 44px;
+    }
+
+
+    .footer-bottom-content p {
+    font-size: 13px;
+    
+    }
+    /* logout */
+    .logout-container{
+        width: 80%;
+    }
+    .logoout-content h4{
+        font-size: 18px;
+    }
+    .logoout-content p{
+        font-size: 14px;
+    }
+    .logout-action a{
+        font-size: 14px;
+        width: 130px;
+    }
+
+    .edit-addresses-content button{
+        height: 45px;
+        font-size: 14px;
+    }
+    
+    
+    
+    .order-status-icon:nth-child(1)::before{
+        width:50px;
+
+    font-size:10px;
+}
+
+
+.order-status-icon:nth-child(2)::before{
+   
+    font-size:10px;
+    width:50px;
+}
+
+.order-status-icon:nth-child(3)::before{
+    
+    font-size:10px;
+    width:50px;
+}
+
+.order-status-icon:nth-child(4)::before{
+    
+    font-size:10px;
+    width:50px;
+}
+
+.verify-inputs input {
+  width: 50px;
+  height: 50px;
+}
+
+.filter-select-txt{
+  flex-direction: column;
+  gap: 10px;
+}
+
+.thanks p{
+  font-size: 20px;
+}
+.thanks h4{
+  font-size: 24px;
+}
+
+.discounts-cards .card{
+  height: 240px;
+}
+
+
+
+}
+
+@media (max-width: 480px) {
+  .about-img .img-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .about-us .lable1 p,
+  .about-us .lable2 p {
+    font-size: 14px;
+  }
+
+  .about-us .lable1 {
+    top: -20px;
+    right: 10px;
+  }
+  .about-us .lable2 {
+    bottom: -20px;
+    left: 10px;
+  }
+
+  .news-banner-header form {
+    width: 280px;
+  }
+  .news-banner-header {
+    align-items: end;
+  }
+  .news-banner-img {
+    height: 50%;
+    bottom: -10%;
+  }
+
+  .news-banner-header h1,
+  .footer-links h4, .footer-contact h4 {
+
+    font-size: 18px;
+  }
+
+  .our-customers .customers-header p,
+  .address-details-item p {
+    font-size: 14px;
+  }
+
+  .customer-bg {
+    top: -90px;
+    width: 130px;
+    height: 95px;
+  }
+
+  .details-content h2,
+  .product-sug-container h4 {
+    font-size: 20px;
+  }
+
+  .product-price h4.about-img {
+    font-size: 18px;
+  }
+  .product-review .user-details .user-name,
+  footer p {
+    font-size: 16px;
+  }
+
+  .details-content .product-rate i,
+  .details-content .product-rate .rate-count p,
+  .details-content-description p,
+  .details-counter .add-to-cart,
+  .product-details-tab .nav-pills .nav-link,
+  .product-details-tab #pills-home,
+  .product-review .user-details .user-comment,
+  .action-button label ,
+  .edit-addresses-header .action-button label{
+    font-size: 14px;
+    gap:10px;
+  }
+
+  .details-content-description .size .size-item,
+  .product-review .user-details .rate i,
+  .details-counter .add-to-cart-btn {
+    font-size: 10px;
+  }
+
+
+  .details-counter .add-to-cart svg{
+    width: 22px;
+    height: 22px;
+  }
+
+    .order-status-icon:nth-child(1)::before{
+    
+    font-size:10px;
+}
+
+
+.order-status-icon:nth-child(2)::before{
+   
+    font-size:10px;
+}
+
+.order-status-icon:nth-child(3)::before{
+    
+    font-size:10px;
+}
+
+.order-status-icon:nth-child(4)::before{
+    
+    font-size:10px;
+}
+  .comment-form input,
+  .comment-form button,
+  .product-details-tab .nav-pills .nav-link,
+  .details-counter .add-to-cart,
+  .details-counter .counter {
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .comment-form button {
+    width: 120px;
+  }
+
+  .blog-item{
+    margin: 15px 0;
+    padding: 10px;
+  }
+    /* order profile */
+    .product-review{
+        flex-direction: column;
+    }
+
+    /* logout */
+    .logout-container{
+        width: 85%;
+        padding: 20px;
+    }
+    .logoout-content h4{
+        font-size: 18px;
+    }
+    .logoout-content p{
+        font-size: 14px;
+    }
+    .logout-action{
+        gap : 10px;
+    }
+    .logout-action a{
+        font-size: 11px;
+
+          width: 110px;
+          height: 40px;
+    }
+
+  .news-banner-header {
+    align-items: end;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+.news-banner-header form input {
+    z-index: 4;
+    font-size: 12px;
+}
+
+  .news-banner-img {
+    height: 39%;
+    bottom: auto;
+    top: -77px;
+    left: 0;
+    right: auto;
+  }
+
+  .our-customers .item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .blog-header {
+    gap: 0px;
+  }
+
+  .our-customers .customers-header h1 {
+    font-weight: 600;
+    color: var(--primary1);
+    font-size: 20px;
+  }
+
+  .about-header h2 {
+    color: var(--primary1);
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .about-header p {
+    text-align: center;
+  }
+
+  .about-content p {
+    text-align: center;
+  }
+
+  .about-ratting .ratting-item p {
+    font-weight: 400;
+    color: var(--gray);
+    font-size: 17px;
+  }
+
+  .about-ratting .ratting-item h3 {
+    font-size: 20px;
+  }
+
+  .counter-box i {
+    font-size: 15px;
+    color: var(--primary3);
+  }
+
+  .top-title {
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+
+  .department_classifications_head p {
+    font-size: 14px;
+    color: var(--black);
+    font-family: "MEDIUM";
+  }
+
+  .offer-price h1,
+  .offer-price p {
+    font-size: 50px;
+  }
+  .footer-top-img {
+    
+        top: -97px;
+        left: 50%;
+        z-index: 2;
+        width: 220px;
+        transform: translateX(-50%);
+}
+
+
+.info-item h5, .address-details-item h5, .edit-addresses-content .group-form label {
+  font-size: 14px;
+}
+.order-det-section {
+  padding: 20px 10px;
+
+}
+
+
+    .order-status-icon {
+        width: 33px;
+        height: 33px;
+    }
+
+
+    .my-orders-header h4, .current-orders-header h4, .orders-section-header, .details-header .order-number h4, .details-header .order-price h4, .addresses-header h4, .edit-addresses-header h4 {
+      font-size: 16px;
+  }
+
+  .sub-header-page {
+    min-height: 95px;
+    height: auto;
+  }
+
+  .features-banner{
+    width: 90px;
+  }
+
+
+  .thanks p{
+    font-size: 18px;
+  }
+  .thanks h4{
+    font-size: 20px;
+  }
+
+  .final-order-summary a{
+    font-size: 14px;
+  }
+
+  .discounts-cards .card{
+    height: 210px;
+  }
+
+  .shopping-now {
+    width: 110px;
+    height: 40px;
+    font-size: 16px;
+  }
+  
+}
+@media (max-width: 375px) {
+  .partner-item {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .details-counter .add-to-cart{
+      font-size:12px;
+     
+  }
+
+  .news-banner-header form {
+    width: 240px;
+  }
+
+  .news-banner-img {
+    height: 40%;
+    bottom: -8%;
+  }
+
+  .details-imgaes {
+    height: 300px;
+  }
+
+  .slider-for img,
+  .slider-nav img {
+    height: 90%;
+  }
+
+  .orders-details-content,
+  .order-header-info,
+  .info-item {
+    padding: 10px;
+
+  }
+
+  .dog-haddi{
+    display: none;
+  }
+
+
+  .verify-inputs input {
+    width: 47px;
+    height: 47px;
+}
+
+ 
+    /* logout */
+    .logout-container{
+        width: 90%;
+    }
+    .logoout-content h4,
+    .footer-links h4, .footer-contact h4 {
+    
+        font-size: 16px;
+    }
+    .logoout-content p,
+    footer p
+    {
+        font-size: 14px;
+    }
+    .logout-action{
+        gap : 10px;
+    }
+    .logout-action a{
+      font-size: 10px;
+      width: 110px;
+      height: 40px;
+    }
+
+    .order-status {
+      margin: 10px 20px;
+  }
+
+  .sub-header-liniks a, .sub-header-liniks p {
+    font-size: 12px;
+}
+
+.discounts-cards .card{
+  height: 160px;
+}
+
+.carousel-hero .item {
+  background-size: contain;
+}
+
+.img-dogs-container .img {
+  width: 130px;
+}
+
+}
+
+@media (max-width: 320px) {
+  .my-orders-header h4, .current-orders-header h4, .orders-section-header, .details-header .order-number h4, .details-header .order-price h4, .addresses-header h4, .edit-addresses-header h4 {
+    font-size: 14px;
+}
+
+.sub-header-liniks a, .sub-header-liniks p {
+  font-size: 12px;
+}
+
+  }
