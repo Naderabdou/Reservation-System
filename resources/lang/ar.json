@@ -1231,6 +1231,8 @@
     "Reservation Date" : "تاريخ الحجز",
     "Is Available" : "متاح",
     "Completed Orders" : "الطلبات المكتملة",
-    "Order Cancel" : "الغاء الطلب"
+    "Order Cancel" : "الغاء الطلب",
+    "Accepted Orders" : "الطلبات المقبولة",
+    "accepted" : "مقبول"
 
 }

@@ -27,7 +27,7 @@ class OrderResource extends Resource
 {
     protected static ?string $model = Order::class;
 
-    protected static ?string $navigationIcon = 'icon-orderNew';
+    protected static ?string $navigationIcon = 'icon-online_order';
 
     protected static ?int $navigationSort = 8;
 
@@ -55,7 +55,7 @@ class OrderResource extends Resource
         return $table
             ->emptyStateHeading(__('No Orders Found'))
             ->emptyStateDescription(__('Orders will appear here once they are created.'))
-            ->emptyStateIcon('icon-order')
+            ->emptyStateIcon('icon-online_order')
             ->striped()
             ->heading(__('Orders'))
             ->description(__('Here you can view all orders'))
@@ -146,42 +146,56 @@ class OrderResource extends Resource
                     // Tables\Actions\DeleteAction::make()->hidden(function (Order $record) {
                     //     return $record->status !== 'canceled' ? true : false;
                     // }),
-                    Action::make('change status')
+                    Action::make('change_status')
                         ->label(__('Change Status'))
                         ->form([
                             Select::make('status')
                                 ->options([
                                     'pending' => __('Pending'),
+                                    'accepted' => __('Accepted'),
                                     'completed' => __('Completed'),
                                     'canceled' => __('Canceled'),
                                 ])
                                 ->label(__('Status'))
                                 ->required()
-                                ->default(function (Order $record) {
-                                    return $record->status;
-                                }),
+                                ->default(fn(Order $record) => $record->status),
+                        ])
+                        ->action(function (Order $record, array $data) {
+                            $newStatus = $data['status'];
+                            $currentStatus = $record->status;
 
-                        ])->action(function (Order $order, array $data) {
+                            // تحقق من الانتقال مسموح به
+                            if (!$record->canChangeStatusTo($newStatus)) {
+                                $allowed = $record->getAllowedNextStatuses();
+                                Notification::make()
+                                    ->title(__("لا يمكن تغيير الحالة من $currentStatus إلى $newStatus. الحالات المسموحة: $allowed"))
+                                    ->danger()
+                                    ->send();
 
+                                return;
+                            }
 
-                            $order->update($data);
+                            // تحديث الحالة
+                            $record->update(['status' => $newStatus]);
 
                             Notification::make()
                                 ->title(__('تم تغيير حالة الطلب بنجاح'))
-                                ->color('success')
+                                ->success()
                                 ->send();
-                        })->icon('icon-orderNew'),
+                        })
+                        ->icon('icon-online_order')
 
 
 
 
-                ]),
-            ])
-            ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+
                 ]),
             ]);
+        // ->bulkActions([
+        //     Tables\Actions\BulkActionGroup::make([
+        //         Tables\Actions\DeleteBulkAction::make(),
+        //     ]),
+        // ]);
     }
 
     public static function infolist(Infolist $infolist): Infolist
@@ -235,17 +249,20 @@ class OrderResource extends Resource
                                     ->badge()
                                     ->formatStateUsing(fn(string $state): string => match ($state) {
                                         'pending' => __('Pending'),
+                                        'accepted' => __('Accepted'),
                                         'completed' => __('Completed'),
                                         'canceled' => __('Canceled'),
                                         default => ucfirst($state),
                                     })
                                     ->icon(fn(string $state): string => match ($state) {
                                         'pending' => 'icon-pending',
+                                        'accepted' => 'icon-checked',
                                         'completed' => 'icon-loading',
                                         'canceled' => 'icon-multiply',
                                     })
                                     ->color(fn(string $state): string => match ($state) {
                                         'pending' => 'gray',
+                                        'accepted' => 'primary',
                                         'completed' => 'success',
                                         'canceled' => 'danger',
                                         default => 'secondary',

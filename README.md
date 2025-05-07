@@ -45,6 +45,10 @@ The idea is to reduce manual communication that could cause confusion or delays,
 
 ---
 
+## 🧪 Explanation video : https://drive.google.com/file/d/1_2uv7IOUh4lcU2SKY563MRRtnOKrsQ19/view?usp=drive_link
+
+
+
 👤 **Admin Access**  
   - **Email:** admin@gmail.com  
   - **Password:** password

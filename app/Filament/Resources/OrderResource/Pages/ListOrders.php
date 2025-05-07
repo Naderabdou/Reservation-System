@@ -34,10 +34,10 @@ class ListOrders extends ListRecords
                 ->iconPosition(IconPosition::Before)
                 ->query(fn($query) => $query->where('status', 'pending')),
 
-            // 'accepted' => Tab::make(__('Accepted'))
-            //     ->icon('icon-checked')
-            //     ->iconPosition(IconPosition::Before)
-            //     ->query(fn($query) => $query->where('status', 'accepted')),
+            'accepted' => Tab::make(__('Accepted'))
+                ->icon('icon-checked')
+                ->iconPosition(IconPosition::Before)
+                ->query(fn($query) => $query->where('status', 'accepted')),
 
 
             'completed' => Tab::make(__('Completed'))

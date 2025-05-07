@@ -9,7 +9,7 @@ return new class extends Migration {
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->enum('status', ['pending','completed', 'canceled'])->default('pending');
+            $table->enum('status', ['pending','accepted', 'canceled'])->default('pending');
             $table->enum('canceled_type', ['user', 'admin'])->nullable();
             $table->string('order_number')->unique();
             $table->foreignId('service_id')->nullable()->references('id')->on('services')->nullOnDelete();

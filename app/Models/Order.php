@@ -11,8 +11,6 @@ class Order extends Model
     use HasFactory;
 
     protected $fillable = [
-        'status',
-        // 'canceled_type',
         'order_number',
         'service_id',
         'service_name',
@@ -21,7 +19,8 @@ class Order extends Model
         'name',
         'email',
         'phone',
-        'reservation_date'
+        'reservation_date',
+        'status'
 
     ];
 
@@ -71,5 +70,32 @@ class Order extends Model
     public function getReservationDateAttribute()
     {
         return $this->formatDate('reservation_date');
+    }
+
+    public static function getAllowedTransitions(): array
+    {
+        return [
+            'pending' => ['accepted', 'canceled'],
+            'accepted' => ['completed', 'canceled'],
+            'completed' => [],
+            'canceled' => [],
+        ];
+    }
+
+    public function canChangeStatusTo(string $newStatus): bool
+    {
+        $transitions = self::getAllowedTransitions();
+
+        if (!isset($transitions[$this->status])) {
+            return false;
+        }
+
+        return in_array($newStatus, $transitions[$this->status]);
+    }
+
+    public function getAllowedNextStatuses(): string
+    {
+        $transitions = self::getAllowedTransitions();
+        return implode(', ', $transitions[$this->status] ?? []);
     }
 }
