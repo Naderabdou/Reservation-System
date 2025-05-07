@@ -46,7 +46,7 @@ The idea is to reduce manual communication that could cause confusion or delays,
 ---
 ## 🧪 Explanation video : https://drive.google.com/file/d/1_2uv7IOUh4lcU2SKY563MRRtnOKrsQ19/view?usp=drive_link
 ## 🧪 Github Link : https://github.com/Naderabdou/Reservation-System
-## 🧪 https://documenter.getpostman.com/view/42925117/2sB2j7eVtH
+## 🧪 POSTMAN : https://documenter.getpostman.com/view/42925117/2sB2j7eVtH
 
 ----
 
