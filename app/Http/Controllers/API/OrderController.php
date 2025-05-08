@@ -42,37 +42,25 @@ class OrderController extends Controller
     }
 
 
-    public function cancelOrder($id)
-    {
-        $user = auth()->user();
-        $order = $user->orders()->where('status', 'pending')->find($id);
-
-        if (!$order) {
-            return $this->notFoundResponse();
-        }
-
-        $order->update(
-            [
-                'status' => 'canceled',
-            ]
-        );
-
-        return $this->ApiResponse(null, __('Order Canceled Successfully'), 200);
-    }
-
-    // public function chengeOrderStatus($id, $status)
+    // public function cancelOrder($id)
     // {
-    //     $statuses = ['accepted', 'completed'];
-    //     if (!in_array($status, $statuses)) {
-    //         return $this->apiResponse(null, __('Invalid Status'), 400);
-    //     }
-    //     $order = Order::find($id);
+    //     $user = auth()->user();
+    //     $order = $user->orders()->where('status', 'pending')->find($id);
+
     //     if (!$order) {
     //         return $this->notFoundResponse();
     //     }
-    //     $order->update(['status' => $status]);
-    //     return $this->ApiResponse(null, __('Order Status Updated Successfully'), 200);
+
+    //     $order->update(
+    //         [
+    //             'status' => 'canceled',
+    //         ]
+    //     );
+
+    //     return $this->ApiResponse(null, __('Order Canceled Successfully'), 200);
     // }
+
+
 
     public function changeOrderStatus(OrderStatusRequest $request, $id)
     {

@@ -6,8 +6,9 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\UserResource;
-use App\Http\Requests\API\LoginRequest;
+use Illuminate\Support\Facades\Auth;
 
+use App\Http\Requests\API\LoginRequest;
 use App\Http\Controllers\API\Traits\ApiResponseTrait;
 
 class UserController extends Controller
@@ -25,6 +26,10 @@ class UserController extends Controller
         }
 
         $user = auth()->user();
+        if (!$user->hasRole('admin')) {
+            Auth::logout(); // نطرده لو مش أدمن
+            return response()->json(['message' => 'Unauthorized This User Is Not Admin'], 403);
+        }
 
         $token = $user->createToken('auth_token')->plainTextToken;
 

@@ -19,18 +19,18 @@ Route::middleware('localization')->namespace('API')->group(function () {
 
     // ===========================Auth routes=========================== //
     Route::post('login', 'UserController@login');
-    Route::post('logout', 'UserController@logout')->middleware('auth:sanctum');
     // ===========================End Auth routes=========================== //
 
 
-    // ===========================Services routes=========================== //
-    // ===========================End Services routes=========================== //
 
 
     Route::middleware(['auth:sanctum', 'checkRole:admin'])->group(function () {
 
+        // ===========================Services routes=========================== //
+
         Route::get('services', 'ServiceController@index');
 
+        // ===========================End Services routes=========================== //
 
 
         // ============================Orders routes Managing reservations =========================== //
@@ -42,7 +42,6 @@ Route::middleware('localization')->namespace('API')->group(function () {
         // ===========================End My Orders routes=========================== //
 
 
-
-
+        Route::post('logout', 'UserController@logout');
     });
 });
