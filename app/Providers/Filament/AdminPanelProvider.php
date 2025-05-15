@@ -54,18 +54,14 @@ class AdminPanelProvider extends PanelProvider
                 ],
             ])
 
-            ->brandName(function () {
-                $locale = app()->getLocale();
-                $property = 'site_name_' . $locale;
-                return app(GeneralSettings::class)->$property;
-            })
+            ->brandName('Code Quests')
 
             //  ->brandLogo(fn () => view('filament.admin.logo'))
             // ->brandLogo(fn() => view('filament.admin.logoDark'))
-            ->brandLogo(asset('storage/' . app(GeneralSettings::class)->logo))
+            ->brandLogo(asset('quto.webp'))
             ->brandLogoHeight('3rem')
 
-            ->favicon(asset('storage/' . app(GeneralSettings::class)->favicon))
+            ->favicon(asset('background.png'))
             ->sidebarCollapsibleOnDesktop()
             ->databaseNotifications(true)
             ->databaseNotificationsPolling('80s')
